@@ -35,7 +35,7 @@ function ExpenseForm(props) {
     event.preventDefault(); // prevent page refresh
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     props.onSaveExpenseData(expenseData);
